@@ -1,0 +1,791 @@
+2020/02/24-21:33:00.215761 2d14 RocksDB version: 5.7.3
+2020/02/24-21:33:00.215852 2d14 Git sha rocksdb_build_git_sha:@acef93ed65f0cab701565a5d21edc1dea894130c@
+2020/02/24-21:33:00.215877 2d14 Compile date Sep  1 2017
+2020/02/24-21:33:00.215903 2d14 DB SUMMARY
+2020/02/24-21:33:00.216167 2d14 SST files in db dir, Total Num: 0, files: 
+2020/02/24-21:33:00.216194 2d14 Write Ahead Log file in db: 
+2020/02/24-21:33:00.216213 2d14                         Options.error_if_exists: 0
+2020/02/24-21:33:00.216231 2d14                       Options.create_if_missing: 1
+2020/02/24-21:33:00.216248 2d14                         Options.paranoid_checks: 1
+2020/02/24-21:33:00.216547 2d14                                     Options.env: 0000000000F506F0
+2020/02/24-21:33:00.216564 2d14                                Options.info_log: 0000000000F74590
+2020/02/24-21:33:00.216575 2d14                Options.max_file_opening_threads: 16
+2020/02/24-21:33:00.216581 2d14                               Options.use_fsync: 0
+2020/02/24-21:33:00.216587 2d14                       Options.max_log_file_size: 1048576
+2020/02/24-21:33:00.216593 2d14                  Options.max_manifest_file_size: 1048576
+2020/02/24-21:33:00.216598 2d14                   Options.log_file_time_to_roll: 0
+2020/02/24-21:33:00.216604 2d14                       Options.keep_log_file_num: 1000
+2020/02/24-21:33:00.216610 2d14                    Options.recycle_log_file_num: 0
+2020/02/24-21:33:00.216615 2d14                         Options.allow_fallocate: 1
+2020/02/24-21:33:00.216621 2d14                        Options.allow_mmap_reads: 0
+2020/02/24-21:33:00.216627 2d14                       Options.allow_mmap_writes: 0
+2020/02/24-21:33:00.216632 2d14                        Options.use_direct_reads: 0
+2020/02/24-21:33:00.216638 2d14                        Options.use_direct_io_for_flush_and_compaction: 0
+2020/02/24-21:33:00.216644 2d14          Options.create_missing_column_families: 1
+2020/02/24-21:33:00.216650 2d14                              Options.db_log_dir: mainnet.log
+2020/02/24-21:33:00.216655 2d14                                 Options.wal_dir: db
+2020/02/24-21:33:00.216661 2d14                Options.table_cache_numshardbits: 6
+2020/02/24-21:33:00.216666 2d14                      Options.max_subcompactions: 4
+2020/02/24-21:33:00.216675 2d14                  Options.max_background_flushes: -1
+2020/02/24-21:33:00.216681 2d14                         Options.WAL_ttl_seconds: 0
+2020/02/24-21:33:00.216686 2d14                       Options.WAL_size_limit_MB: 0
+2020/02/24-21:33:00.216692 2d14             Options.manifest_preallocation_size: 4194304
+2020/02/24-21:33:00.216698 2d14                     Options.is_fd_close_on_exec: 1
+2020/02/24-21:33:00.216703 2d14                   Options.advise_random_on_open: 1
+2020/02/24-21:33:00.216709 2d14                    Options.db_write_buffer_size: 0
+2020/02/24-21:33:00.216715 2d14         Options.access_hint_on_compaction_start: 1
+2020/02/24-21:33:00.216720 2d14  Options.new_table_reader_for_compaction_inputs: 0
+2020/02/24-21:33:00.216726 2d14               Options.compaction_readahead_size: 0
+2020/02/24-21:33:00.216732 2d14           Options.random_access_max_buffer_size: 1048576
+2020/02/24-21:33:00.216738 2d14           Options.writable_file_max_buffer_size: 1048576
+2020/02/24-21:33:00.216743 2d14                      Options.use_adaptive_mutex: 0
+2020/02/24-21:33:00.216749 2d14                            Options.rate_limiter: 0000000000000000
+2020/02/24-21:33:00.216755 2d14     Options.sst_file_manager.rate_bytes_per_sec: 0
+2020/02/24-21:33:00.216761 2d14                          Options.bytes_per_sync: 0
+2020/02/24-21:33:00.216766 2d14                      Options.wal_bytes_per_sync: 0
+2020/02/24-21:33:00.216772 2d14                       Options.wal_recovery_mode: 2
+2020/02/24-21:33:00.216777 2d14                  Options.enable_thread_tracking: 0
+2020/02/24-21:33:00.216783 2d14                  Options.enable_pipelined_write: 0
+2020/02/24-21:33:00.216789 2d14         Options.allow_concurrent_memtable_write: 1
+2020/02/24-21:33:00.216794 2d14      Options.enable_write_thread_adaptive_yield: 1
+2020/02/24-21:33:00.216828 2d14             Options.write_thread_max_yield_usec: 100
+2020/02/24-21:33:00.216839 2d14            Options.write_thread_slow_yield_usec: 3
+2020/02/24-21:33:00.216845 2d14                               Options.row_cache: None
+2020/02/24-21:33:00.216859 2d14                              Options.wal_filter: None
+2020/02/24-21:33:00.216865 2d14             Options.avoid_flush_during_recovery: 0
+2020/02/24-21:33:00.216870 2d14             Options.allow_ingest_behind: 0
+2020/02/24-21:33:00.216876 2d14             Options.concurrent_prepare: 0
+2020/02/24-21:33:00.216881 2d14             Options.manual_wal_flush: 0
+2020/02/24-21:33:00.216886 2d14             Options.max_background_jobs: 2
+2020/02/24-21:33:00.216897 2d14             Options.max_background_compactions: 1
+2020/02/24-21:33:00.216908 2d14             Options.avoid_flush_during_shutdown: 0
+2020/02/24-21:33:00.216918 2d14             Options.delayed_write_rate : 16777216
+2020/02/24-21:33:00.216927 2d14             Options.max_total_wal_size: 0
+2020/02/24-21:33:00.216939 2d14             Options.delete_obsolete_files_period_micros: 21600000000
+2020/02/24-21:33:00.216946 2d14                   Options.stats_dump_period_sec: 600
+2020/02/24-21:33:00.216952 2d14                          Options.max_open_files: 10000
+2020/02/24-21:33:00.216964 2d14 Compression algorithms supported:
+2020/02/24-21:33:00.216970 2d14 	Snappy supported: 0
+2020/02/24-21:33:00.216975 2d14 	Zlib supported: 0
+2020/02/24-21:33:00.216979 2d14 	Bzip supported: 0
+2020/02/24-21:33:00.216984 2d14 	LZ4 supported: 0
+2020/02/24-21:33:00.216989 2d14 	ZSTD supported: 0
+2020/02/24-21:33:00.216999 2d14 Fast CRC32 supported: 1
+2020/02/24-21:33:00.217441 2d14 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:216] Creating manifest 1 
+2020/02/24-21:33:00.454002 2d14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2712] Recovering from manifest file: MANIFEST-000001
+2020/02/24-21:33:00.454280 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2020/02/24-21:33:00.454335 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:00.454351 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:00.454361 2d14        Options.compaction_filter: None
+2020/02/24-21:33:00.454369 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:00.454378 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:00.454386 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:00.454439 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:00.454458 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:00.454468 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:00.454477 2d14          Options.compression: NoCompression
+2020/02/24-21:33:00.454485 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:00.454494 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:00.454501 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:00.454509 2d14             Options.num_levels: 7
+2020/02/24-21:33:00.454517 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:00.454526 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:00.454573 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:00.454586 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:00.454595 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:00.454603 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:00.454612 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:00.454620 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:00.454628 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:00.454637 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:00.454646 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:00.454655 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:00.454663 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:00.454681 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:00.454691 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:00.454700 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:00.454708 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:00.454717 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:00.454725 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:00.454733 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:00.454741 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:00.454749 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:00.454758 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:00.454766 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:00.454775 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:00.454784 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:00.454792 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:00.454800 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:00.454812 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:00.454826 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:00.454835 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:00.454844 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:00.454853 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:00.454861 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:00.454870 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:00.454880 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:00.454889 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:00.454897 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:00.454905 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:00.454914 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:00.454923 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:00.454933 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:00.454943 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:00.454952 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:00.454960 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:00.454968 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:00.454977 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:00.454985 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:00.454993 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:00.455005 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:00.455225 2d14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2969] Recovered from manifest file:db/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0
+2020/02/24-21:33:00.455241 2d14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2977] Column family [default] (ID 0), log number is 0
+2020/02/24-21:33:00.455731 2d14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2498] Creating manifest 4
+2020/02/24-21:33:00.604539 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [transaction]:
+2020/02/24-21:33:00.604566 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:00.604578 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:00.604586 2d14        Options.compaction_filter: None
+2020/02/24-21:33:00.604596 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:00.604607 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:00.604616 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:00.604667 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:00.604679 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:00.604688 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:00.604696 2d14          Options.compression: NoCompression
+2020/02/24-21:33:00.604706 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:00.604715 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:00.604724 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:00.604732 2d14             Options.num_levels: 7
+2020/02/24-21:33:00.604740 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:00.604748 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:00.604757 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:00.604767 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:00.604777 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:00.604786 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:00.604798 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:00.604807 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:00.604820 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:00.604830 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:00.604839 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:00.604848 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:00.604860 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:00.604878 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:00.604891 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:00.604901 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:00.604910 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:00.604992 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:00.605018 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:00.605028 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:00.605041 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:00.605051 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:00.605062 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:00.605072 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:00.605084 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:00.605096 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:00.605111 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:00.605127 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:00.605173 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:00.605222 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:00.605243 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:00.605256 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:00.605267 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:00.605280 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:00.605298 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:00.605318 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:00.605336 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:00.605357 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:00.605376 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:00.605396 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:00.605427 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:00.605440 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:00.605462 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:00.605472 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:00.605481 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:00.605491 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:00.605501 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:00.605511 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:00.605520 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:00.605530 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:00.605593 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [transaction] (ID 1)
+2020/02/24-21:33:00.825503 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [transaction-metadata]:
+2020/02/24-21:33:00.825538 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:00.825545 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:00.825551 2d14        Options.compaction_filter: None
+2020/02/24-21:33:00.825557 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:00.825563 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:00.825568 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:00.825608 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:00.825623 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:00.825634 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:00.825643 2d14          Options.compression: NoCompression
+2020/02/24-21:33:00.825651 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:00.825659 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:00.825669 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:00.825681 2d14             Options.num_levels: 7
+2020/02/24-21:33:00.825690 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:00.825701 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:00.825710 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:00.825719 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:00.825731 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:00.825739 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:00.825745 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:00.825751 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:00.825756 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:00.825762 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:00.825767 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:00.825773 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:00.825779 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:00.825786 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:00.825792 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:00.825808 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:00.825814 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:00.825820 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:00.825825 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:00.825831 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:00.825837 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:00.825845 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:00.825853 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:00.825862 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:00.825871 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:00.825879 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:00.825888 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:00.825896 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:00.825907 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:00.825916 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:00.825924 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:00.825933 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:00.825941 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:00.825950 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:00.825959 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:00.825969 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:00.825981 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:00.825991 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:00.825999 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:00.826007 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:00.826018 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:00.826058 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:00.826070 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:00.826092 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:00.826107 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:00.826118 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:00.826128 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:00.826150 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:00.826161 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:00.826173 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:00.826209 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [transaction-metadata] (ID 2)
+2020/02/24-21:33:01.053181 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [address]:
+2020/02/24-21:33:01.053225 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:01.053242 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:01.053251 2d14        Options.compaction_filter: None
+2020/02/24-21:33:01.053258 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:01.053266 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:01.053273 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:01.053322 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:01.053334 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:01.053341 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:01.053347 2d14          Options.compression: NoCompression
+2020/02/24-21:33:01.053354 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:01.053361 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:01.053368 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:01.053376 2d14             Options.num_levels: 7
+2020/02/24-21:33:01.053384 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:01.053392 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:01.053400 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:01.053409 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:01.053418 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:01.053428 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:01.053436 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:01.053444 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:01.053453 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:01.053461 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:01.053507 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:01.053523 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:01.053531 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:01.053544 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:01.053559 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:01.053570 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:01.053578 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:01.053586 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:01.053601 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:01.053617 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:01.053638 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:01.053660 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:01.053681 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:01.053698 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:01.053712 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:01.053727 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:01.053749 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:01.053766 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:01.053786 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:01.053802 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:01.053816 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:01.053830 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:01.053842 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:01.053855 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:01.053870 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:01.053895 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:01.053910 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:01.053917 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:01.053925 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:01.053932 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:01.053941 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:01.053949 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:01.053961 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:01.053970 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:01.053977 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:01.053984 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:01.053992 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:01.054000 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:01.054006 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:01.054013 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:01.054046 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [address] (ID 3)
+2020/02/24-21:33:01.247515 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [approvee]:
+2020/02/24-21:33:01.247543 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:01.247551 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:01.247557 2d14        Options.compaction_filter: None
+2020/02/24-21:33:01.247563 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:01.247609 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:01.247619 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:01.247657 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:01.247666 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:01.247672 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:01.247678 2d14          Options.compression: NoCompression
+2020/02/24-21:33:01.247684 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:01.247690 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:01.247695 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:01.247701 2d14             Options.num_levels: 7
+2020/02/24-21:33:01.247707 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:01.247712 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:01.247718 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:01.247724 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:01.247729 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:01.247735 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:01.247741 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:01.247746 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:01.247752 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:01.247758 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:01.247764 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:01.247770 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:01.247775 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:01.247782 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:01.247788 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:01.247794 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:01.247800 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:01.247805 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:01.247811 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:01.247818 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:01.247825 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:01.247836 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:01.247848 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:01.247854 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:01.247861 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:01.247866 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:01.247872 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:01.247878 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:01.247887 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:01.247902 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:01.247953 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:01.247966 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:01.247973 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:01.247981 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:01.247988 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:01.247995 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:01.248001 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:01.248007 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:01.248013 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:01.248019 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:01.248024 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:01.248030 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:01.248037 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:01.248043 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:01.248049 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:01.248054 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:01.248060 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:01.248066 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:01.248071 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:01.248077 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:01.248104 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [approvee] (ID 4)
+2020/02/24-21:33:01.469969 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [bundle]:
+2020/02/24-21:33:01.471356 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:01.471375 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:01.471382 2d14        Options.compaction_filter: None
+2020/02/24-21:33:01.471387 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:01.471393 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:01.471402 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:01.471430 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:01.471437 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:01.471443 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:01.471449 2d14          Options.compression: NoCompression
+2020/02/24-21:33:01.471454 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:01.471460 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:01.471467 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:01.471475 2d14             Options.num_levels: 7
+2020/02/24-21:33:01.471481 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:01.471486 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:01.471524 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:01.471532 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:01.471539 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:01.471547 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:01.471552 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:01.471558 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:01.471567 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:01.471579 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:01.471585 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:01.471591 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:01.471596 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:01.471605 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:01.471612 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:01.471618 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:01.471627 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:01.471636 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:01.471645 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:01.471653 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:01.471662 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:01.471670 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:01.471679 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:01.471691 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:01.471702 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:01.471712 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:01.471725 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:01.471731 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:01.471741 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:01.471747 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:01.471753 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:01.471758 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:01.471764 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:01.471770 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:01.471776 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:01.471782 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:01.471788 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:01.471794 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:01.471799 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:01.471806 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:01.471811 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:01.471817 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:01.471823 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:01.471829 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:01.471834 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:01.471840 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:01.471845 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:01.471851 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:01.471856 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:01.471880 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:01.471907 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [bundle] (ID 5)
+2020/02/24-21:33:01.619367 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [obsoleteTag]:
+2020/02/24-21:33:01.619396 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:01.619404 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:01.619410 2d14        Options.compaction_filter: None
+2020/02/24-21:33:01.619416 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:01.619422 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:01.619427 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:01.619470 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:01.619479 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:01.619485 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:01.619490 2d14          Options.compression: NoCompression
+2020/02/24-21:33:01.619496 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:01.619502 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:01.619508 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:01.619514 2d14             Options.num_levels: 7
+2020/02/24-21:33:01.619519 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:01.619525 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:01.619531 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:01.619537 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:01.619546 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:01.619553 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:01.619559 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:01.619565 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:01.619571 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:01.619577 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:01.619586 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:01.619592 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:01.619599 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:01.619607 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:01.619616 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:01.619623 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:01.619630 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:01.619637 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:01.619671 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:01.619719 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:01.619739 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:01.619753 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:01.619877 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:01.619909 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:01.620000 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:01.620035 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:01.620050 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:01.620067 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:01.620115 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:01.620165 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:01.620196 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:01.620212 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:01.620225 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:01.620240 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:01.620253 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:01.620269 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:01.620285 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:01.620301 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:01.620317 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:01.620332 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:01.620343 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:01.620352 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:01.620363 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:01.620371 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:01.620378 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:01.620386 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:01.620393 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:01.620398 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:01.620404 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:01.620409 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:01.620461 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [obsoleteTag] (ID 6)
+2020/02/24-21:33:01.736787 2d14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [tag]:
+2020/02/24-21:33:01.736826 2d14               Options.comparator: leveldb.BytewiseComparator
+2020/02/24-21:33:01.736838 2d14           Options.merge_operator: StringAppendOperator
+2020/02/24-21:33:01.736847 2d14        Options.compaction_filter: None
+2020/02/24-21:33:01.736856 2d14        Options.compaction_filter_factory: None
+2020/02/24-21:33:01.736869 2d14         Options.memtable_factory: SkipListFactory
+2020/02/24-21:33:01.736878 2d14            Options.table_factory: BlockBasedTable
+2020/02/24-21:33:01.736914 2d14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000000F24410)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000001E713830
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 32768
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  format_version: 0
+2020/02/24-21:33:01.736924 2d14        Options.write_buffer_size: 2097152
+2020/02/24-21:33:01.736937 2d14  Options.max_write_buffer_number: 2
+2020/02/24-21:33:01.736948 2d14          Options.compression: NoCompression
+2020/02/24-21:33:01.736957 2d14                  Options.bottommost_compression: Disabled
+2020/02/24-21:33:01.736965 2d14       Options.prefix_extractor: nullptr
+2020/02/24-21:33:01.736973 2d14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2020/02/24-21:33:01.736993 2d14             Options.num_levels: 7
+2020/02/24-21:33:01.737002 2d14        Options.min_write_buffer_number_to_merge: 1
+2020/02/24-21:33:01.737010 2d14     Options.max_write_buffer_number_to_maintain: 0
+2020/02/24-21:33:01.737019 2d14            Options.compression_opts.window_bits: -14
+2020/02/24-21:33:01.737028 2d14                  Options.compression_opts.level: -1
+2020/02/24-21:33:01.737041 2d14               Options.compression_opts.strategy: 0
+2020/02/24-21:33:01.737051 2d14         Options.compression_opts.max_dict_bytes: 0
+2020/02/24-21:33:01.737061 2d14      Options.level0_file_num_compaction_trigger: 4
+2020/02/24-21:33:01.737069 2d14          Options.level0_slowdown_writes_trigger: 20
+2020/02/24-21:33:01.737081 2d14              Options.level0_stop_writes_trigger: 36
+2020/02/24-21:33:01.737091 2d14                   Options.target_file_size_base: 67108864
+2020/02/24-21:33:01.737100 2d14             Options.target_file_size_multiplier: 1
+2020/02/24-21:33:01.737109 2d14                Options.max_bytes_for_level_base: 268435456
+2020/02/24-21:33:01.737117 2d14 Options.level_compaction_dynamic_level_bytes: 0
+2020/02/24-21:33:01.737127 2d14          Options.max_bytes_for_level_multiplier: 10.000000
+2020/02/24-21:33:01.737136 2d14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2020/02/24-21:33:01.737145 2d14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2020/02/24-21:33:01.737154 2d14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2020/02/24-21:33:01.737162 2d14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2020/02/24-21:33:01.737171 2d14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2020/02/24-21:33:01.737180 2d14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2020/02/24-21:33:01.737188 2d14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2020/02/24-21:33:01.737197 2d14       Options.max_sequential_skip_in_iterations: 8
+2020/02/24-21:33:01.737206 2d14                    Options.max_compaction_bytes: 1677721600
+2020/02/24-21:33:01.737215 2d14                        Options.arena_block_size: 262144
+2020/02/24-21:33:01.737224 2d14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2020/02/24-21:33:01.737233 2d14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2020/02/24-21:33:01.737241 2d14       Options.rate_limit_delay_max_milliseconds: 100
+2020/02/24-21:33:01.737250 2d14                Options.disable_auto_compactions: 0
+2020/02/24-21:33:01.737264 2d14                        Options.compaction_style: kCompactionStyleLevel
+2020/02/24-21:33:01.737274 2d14                          Options.compaction_pri: kByCompensatedSize
+2020/02/24-21:33:01.737283 2d14 Options.compaction_options_universal.size_ratio: 1
+2020/02/24-21:33:01.737292 2d14 Options.compaction_options_universal.min_merge_width: 2
+2020/02/24-21:33:01.737302 2d14 Options.compaction_options_universal.max_merge_width: 4294967295
+2020/02/24-21:33:01.737311 2d14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2020/02/24-21:33:01.737320 2d14 Options.compaction_options_universal.compression_size_percent: -1
+2020/02/24-21:33:01.737381 2d14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2020/02/24-21:33:01.737393 2d14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2020/02/24-21:33:01.737402 2d14 Options.compaction_options_fifo.allow_compaction: 0
+2020/02/24-21:33:01.737411 2d14 Options.compaction_options_fifo.ttl: 0
+2020/02/24-21:33:01.737422 2d14                   Options.table_properties_collectors: 
+2020/02/24-21:33:01.737431 2d14                   Options.inplace_update_support: 0
+2020/02/24-21:33:01.737442 2d14                 Options.inplace_update_num_locks: 10000
+2020/02/24-21:33:01.737474 2d14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2020/02/24-21:33:01.737486 2d14   Options.memtable_huge_page_size: 0
+2020/02/24-21:33:01.737496 2d14                           Options.bloom_locality: 0
+2020/02/24-21:33:01.737505 2d14                    Options.max_successive_merges: 0
+2020/02/24-21:33:01.737514 2d14                Options.optimize_filters_for_hits: 0
+2020/02/24-21:33:01.737524 2d14                Options.paranoid_file_checks: 0
+2020/02/24-21:33:01.737533 2d14                Options.force_consistency_checks: 0
+2020/02/24-21:33:01.737542 2d14                Options.report_bg_io_stats: 0
+2020/02/24-21:33:01.737582 2d14 [c:\users\aretter\code\rocksdb\db\db_impl.cc:1244] Created column family [tag] (ID 7)
+2020/02/24-21:33:01.861533 2d14 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1111] DB pointer 000000001E8B8040
+2020/02/24-21:33:01.861999 2d14 [c:\users\aretter\code\rocksdb\db\db_filesnapshot.cc:57] File Deletions Enabled

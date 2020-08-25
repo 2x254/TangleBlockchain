@@ -1,0 +1,26 @@
+// using private node
+
+geth --datadir C:\iota\TangleBlockchainPlatform\dataGeth init C:\iota\TangleBlockchainPlatform\database\genesis.json
+geth --identity "PublicBlockchain" --rpc --rpcport "8280" --rpccorsdomain "*" --rpcapi "db,eth,net,web3" --datadir "C:\iota\TangleBlockchainPlatform\dataGeth" --port "30303" --nodiscover --networkid 1999 console --allow-insecure-unlock --syncmode=full
+personal.newAccount("root")
+eth.getBalance("adresse")
+personal.unlockAccount(“address","root",0)
+// si nous voulons visualizer ouvrir eth-net-intelligence
+pm2 start app.json
+pm2 restart node-app
+// apres ouvrir netstat
+WS_SECRET=mysecret npm start 
+
+
+//  pour la creattion creer des blocks  
+miner.start()
+
+miner.stop()
+
+
+// using public network  on  pow testnet
+
+geth --rinkeby --datadir C:\iota\TangleBlockchainPlatform\dataGeth --port=30303 --cache=2048 --rpc --rpcport=8280 --rpcapi=eth,web3,net,personal --syncmode=fast console --allow-insecure-unlock
+
+
+geth --datadir C:\iota\TangleBlockchainPlatform\dataGeth account new

@@ -1,0 +1,30 @@
+var PORT = 33335;
+var HOST = '127.0.0.1';
+var dgram = require('dgram');
+var server = dgram.createSocket('udp4');
+
+server.on('listening', function() {
+  var address = server.address();
+ console.log('listening...');
+});
+
+server.on('message', function(message, remote) {
+ console.log('root received: ' + message);
+ latestAddress =message
+ 
+ setInterval(async () => {
+  if (active) return
+  active = true
+  await readMam(latestAddress.toString())
+  active = false
+}, 5000)
+ 
+ 
+});
+server.bind(PORT, HOST);
+
+
+let NodeTowClientReception = iyem.create(function(){  
+ 
+});
+NodeTowClientReception.start()
