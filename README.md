@@ -1,5 +1,5 @@
 # TangleBlockchain
-This work is part of the end-of-study project to obtain a master's degree in software engineering research from the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM).
+
 This platform combine tow different technology Tangle ledger and  Blockchain ledger. using connector that works as gateway. It' s transfert data  issued  from  Tangle node to Blockchain node 
 To download Blockchain node you should use Geth node as software this is the link : https://geth.ethereum.org/downloads/
 For data test i used  DS18B20 as sensor you need to dowload file named ConfigrableFirmata to be able to use the sensor. This is the link : https://github.com/firmata/ConfigurableFirmata
